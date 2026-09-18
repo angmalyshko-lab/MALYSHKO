@@ -108,4 +108,3 @@ print(letters)
 text = "  Python Automation  "
 clean_text = text.strip()
 print(clean_text)
-
