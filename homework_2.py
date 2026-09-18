@@ -108,3 +108,74 @@ print(letters)
 text = "  Python Automation  "
 clean_text = text.strip()
 print(clean_text)
+
+
+# Задача 8
+# Раздел: Создание строки
+#
+# Создай строку с твоим любимым цветком и сохрани её в переменную flower.
+# Выведи на экран переменную flower.
+
+flower = "daisies"
+print(flower)
+
+# Задача 9
+# Раздел: Конкатенация строк
+#
+# Даны переменные:
+# city = "Moscow"
+# country = "Russia"
+#
+# Соедини их в одну строку через запятую и пробел, чтобы получилось:
+# Moscow, Russia
+#
+# Сохрани результат в переменную location.
+# Выведи на экран переменную location.
+
+city = "Moscow"
+country = "Russia"
+location = city + "," + " " + country
+print(location)
+
+# Задача 10
+# Раздел: Доступ к символам
+#
+# Дана строка:
+# word = "sunflower"
+#
+# Выведи на экран третий символ этой строки.
+# Выведи на экран предпоследний символ этой строки.
+
+word = "sunflower"
+third_letter = word[2]
+print(third_letter)
+another_letter = word[-2]
+print(another_letter)
+
+
+# Задача 11
+# Раздел: F-строки
+#
+# Даны переменные:
+# product = "laptop"
+# price = 1200
+#
+# Используя f-строку, выведи на экран фразу:
+# The laptop costs 1200 dollars.
+
+product = "laptop"
+price = 1200
+message = f"The {product} costs {price} dollars."
+print(message)
+
+
+# Задача 12
+# Раздел: Срезы
+#
+# Дана строка:
+# text = "developer"
+#
+# Выведи на экран последние 5 символов этой строки, используя срез.
+
+text = "developer"
+print(text[-5:])
