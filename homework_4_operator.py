@@ -57,3 +57,4 @@ elif score <50:  # else:
 num = 33
 result = "Чётное" if num % 2 == 0 else "Нечётное"
 print(result)
+
