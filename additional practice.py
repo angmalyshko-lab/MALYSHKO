@@ -1,3 +1,5 @@
+# LESSON 1
+
 # Задача №11
 # Раздел: Преобразование типов данных
 #
@@ -249,3 +251,6 @@ price_float = float(price)
 final_price = price_float * (1 - discount)
 print(final_price)
 print(type(final_price))
+
+
+# LESSON 2
