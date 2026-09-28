@@ -320,4 +320,79 @@ print(message)
 # Выведи на экран последний символ этой строки.
 
 word = "computer"
+second_letter = word[1]
+last_letter = word[-1]
+print(second_letter)
+print(last_letter)
+
+# Задача 6
+# Раздел: Срезы
+#
+# Дана строка:
+# text = "automation"
+#
+# Выведи на экран символы с 3-го по 6-й включительно, используя срез.
+
+text = "automation"
+substing = text[2:6]
+print(substing)
+
+# Задача 7
+# Раздел: F-строки
+#
+# Даны переменные:
+# fruit = "apple"
+# quantity = 5
+#
+# Используя f-строку, выведи на экран фразу:
+# I have 5 apples.
+
+fruit = "apples"
+quantity = 5
+message = f"I have {quantity} {fruit}."
+print(message)
+
+# Задача 8
+# Раздел: Базовые методы строк
+#
+# Дана строка:
+# text = "PYTHON AUTOMATION"
+#
+# Преобразуй все буквы в нижний регистр.
+# Сохрани результат в переменную lower_text.
+# Выведи на экран переменную lower_text.
+
+text = "PYTHON AUTOMATION"
+lower_text = text.lower()
+print(lower_text)
+
+# Задача 9
+# Раздел: Создание строки
+#
+# Создай строку с названием твоего любимого напитка.
+# Сохрани её в переменную drink.
+# Выведи на экран переменную drink.
+
+drink = "Bumble coffee"
+print(drink)
+
+# Задача 10
+# Раздел: Получение длины строки
+#
+# Даны две строки:
+# first = "cat"
+# second = "elephant"
+#
+# Получи длину каждой строки.
+# Сохрани результаты в переменные length_first и length_second.
+# Выведи на экран обе переменные.
+
+first = "cat"
+second = "elephant"
+length_first = len(first)
+length_second = len(second)
+print(length_first, length_second)
+
+
+# LESSON 3
 
