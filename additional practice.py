@@ -578,3 +578,91 @@ print(capitals["Франция"])
 print(capitals.keys())
 print(capitals.values())
 print("Германия" in capitals)
+
+# Задача 16.
+# Создай класс с именем Dog.
+# Внутри класса определи конструктор __init__, который принимает два аргумента: name и age.
+# Конструктор должен сохранять их в атрибуты self.name и self.age.
+# Затем создай объект этого класса с именем "Рекс" и возрастом 3.
+# Выведи на экран имя и возраст собаки через атрибуты объекта.
+
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_info(self):
+        print(f"Имя: {self.name}, Возраст: {self.age}")
+my_lovely_dog = Dog("Cherry", 11)
+my_lovely_dog.display_info()
+
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+my_lovely_dog = Dog("Рекс", 3)
+print(my_lovely_dog.name)
+print(my_lovely_dog.age)
+
+# Задача 17.
+# Создай класс с именем Counter.
+# У класса должен быть общий атрибут count = 0 (объявлен на уровне класса, не в __init__).
+# В конструкторе __init__ задай атрибут self.name (принимается аргументом).
+# Затем:
+# 1. Создай два объекта этого класса: с именами "A" и "B".
+# 2. Выведи значение общего атрибута count через класс.
+# 3. Выведи имя каждого объекта через его атрибут.
+
+class Counter:
+    count = 0
+    def __init__(self, name):
+        self.name = name
+A = Counter("A")
+B = Counter("B")
+
+print(Counter.count)
+print(A.name)
+print(B.name)
+
+# Задача 18.
+# Создай переменную number = "42" (это строка).
+# Затем:
+# 1. Преобразуй её в целое число и сохрани в переменную number_int.
+# 2. Преобразуй исходную строку в число с плавающей точкой и сохрани в number_float.
+# 3. Выведи тип каждой из трёх переменных (number, number_int, number_float).
+
+number = "42"
+number_int = int(number)
+number_float = float(number)
+print(type(number))
+print(type(number_int))
+print(type(number_float))
+
+# Задача 19.
+# Напиши функцию с именем power, которая принимает два аргумента:
+# base (основание) и exponent (показатель).
+# У аргумента exponent должно быть значение по умолчанию, равное 2.
+# Функция должна возвращать base, возведённое в степень exponent.
+# Затем:
+# 1. Вызови функцию с двумя аргументами: 3 и 4, и выведи результат.
+# 2. Вызови функцию только с одним аргументом: 5, и выведи результат.
+
+def power(base, exponent=2):
+    return base ** exponent
+print(power(3, 4))
+print(power(5))
+
+# Задача 20.
+# Напиши цикл for, который проходит по списку numbers = [3, 7, 12, 5, 9].
+# Для каждого числа:
+# - если число больше 10, выведи "Большое: <число>"
+# - иначе выведи "Маленькое: <число>"
+# Используй f-строку для вывода.
+
+numbers = [3, 7, 12, 5, 9]
+
+for number in numbers:
+    if number > 10:
+        print(f"Большое: {number}")
+    else:
+        print(f"Маленькое: {number}")
